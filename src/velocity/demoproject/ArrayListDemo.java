@@ -1,7 +1,7 @@
 package velocity.demoproject;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+
 
 public class ArrayListDemo {
 
@@ -13,10 +13,12 @@ public class ArrayListDemo {
 		list.add("Sakshi");
 		list.add("Sagar");
 		
-		Iterator<String> itr = list.iterator();
-		while(itr.hasNext())
-			System.out.println(itr.next());
+		for (String str : list) {
 			
+			System.out.println(str);
+	
+			
+		}
 		
 	}
 
